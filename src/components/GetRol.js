@@ -9,7 +9,7 @@ const GetRol = (props) => {
  const user = useSelector(state => state.User);
     return(
         <>
-            { (user.id_rol == props.rol ) ? props.children : <Redirect to='/Home'/>}
+            { (user.id_rol === parseInt(props.rol) ) ? props.children : <Redirect to='/Home'/>}
         </>
     );
 }

@@ -45,7 +45,8 @@ const Register = () => {
 
     useEffect(() => {
         validate_fields();
-    },[formData])
+    },[formData]);
+
     return (
         <>
             <Navigation></Navigation>
