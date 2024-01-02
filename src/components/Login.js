@@ -39,13 +39,13 @@ const Register = () => {
     const handle_email = ( e ) => {
         const { value } = e.target, boolean_password = validate_email_string( value );
         show_or_hide_element( 'id_error_email', boolean_password );
-        boolean_password && handleInputChange(e);
+        handleInputChange(e);
     }
-
 
     useEffect(() => {
         validate_fields();
-    },[formData]);
+    }, [ formData ])
+   
 
     return (
         <>
